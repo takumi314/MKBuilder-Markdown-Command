@@ -18,6 +18,7 @@
 		E1D4ECF120E4FA160030EAB7 /* MarkdownKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D4ECE120E4FA160030EAB7 /* MarkdownKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1D4ECF420E4FA160030EAB7 /* MarkdownKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */; };
 		E1D4ECF520E4FA160030EAB7 /* MarkdownKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1D4ECFE20E4FCC90030EAB7 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1D4ECFD20E4FCC90030EAB7 /* Components.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		E1D4ECE720E4FA160030EAB7 /* MarkdownKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4ECEE20E4FA160030EAB7 /* MarkdownKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownKitTests.swift; sourceTree = "<group>"; };
 		E1D4ECF020E4FA160030EAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D4ECFD20E4FCC90030EAB7 /* Components.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Components.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				E1D4ECC220E4F8C30030EAB7 /* MainMenu.xib */,
 				E1D4ECC520E4F8C30030EAB7 /* Info.plist */,
 				E1D4ECC620E4F8C30030EAB7 /* MKBuilder.entitlements */,
+				E1D4ECFD20E4FCC90030EAB7 /* Components.plist */,
 			);
 			path = MKBuilder;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4ECFE20E4FCC90030EAB7 /* Components.plist in Resources */,
 				E1D4ECC120E4F8C30030EAB7 /* Assets.xcassets in Resources */,
 				E1D4ECBF20E4F8C00030EAB7 /* Document.xib in Resources */,
 				E1D4ECC420E4F8C30030EAB7 /* MainMenu.xib in Resources */,
@@ -549,7 +553,7 @@
 				CODE_SIGN_ENTITLEMENTS = MKBuilder/MKBuilder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				INFOPLIST_FILE = MKBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,7 +572,7 @@
 				CODE_SIGN_ENTITLEMENTS = MKBuilder/MKBuilder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				INFOPLIST_FILE = MKBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
