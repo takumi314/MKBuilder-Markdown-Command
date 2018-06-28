@@ -13,6 +13,11 @@
 		E1D4ECC120E4F8C30030EAB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D4ECC020E4F8C30030EAB7 /* Assets.xcassets */; };
 		E1D4ECC420E4F8C30030EAB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D4ECC220E4F8C30030EAB7 /* MainMenu.xib */; };
 		E1D4ECD020E4F8C30030EAB7 /* MKBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4ECCF20E4F8C30030EAB7 /* MKBuilderTests.swift */; };
+		E1D4ECE820E4FA160030EAB7 /* MarkdownKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */; };
+		E1D4ECEF20E4FA160030EAB7 /* MarkdownKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4ECEE20E4FA160030EAB7 /* MarkdownKitTests.swift */; };
+		E1D4ECF120E4FA160030EAB7 /* MarkdownKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D4ECE120E4FA160030EAB7 /* MarkdownKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1D4ECF420E4FA160030EAB7 /* MarkdownKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */; };
+		E1D4ECF520E4FA160030EAB7 /* MarkdownKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,42 @@
 			remoteGlobalIDString = E1D4ECB520E4F8C00030EAB7;
 			remoteInfo = MKBuilder;
 		};
+		E1D4ECE920E4FA160030EAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D4ECAE20E4F8C00030EAB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D4ECDE20E4FA150030EAB7;
+			remoteInfo = MarkdownKit;
+		};
+		E1D4ECEB20E4FA160030EAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D4ECAE20E4F8C00030EAB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D4ECB520E4F8C00030EAB7;
+			remoteInfo = MKBuilder;
+		};
+		E1D4ECF220E4FA160030EAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D4ECAE20E4F8C00030EAB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D4ECDE20E4FA150030EAB7;
+			remoteInfo = MarkdownKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1D4ECF920E4FA160030EAB7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1D4ECF520E4FA160030EAB7 /* MarkdownKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1D4ECB620E4F8C00030EAB7 /* MKBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +77,12 @@
 		E1D4ECCB20E4F8C30030EAB7 /* MKBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4ECCF20E4F8C30030EAB7 /* MKBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKBuilderTests.swift; sourceTree = "<group>"; };
 		E1D4ECD120E4F8C30030EAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarkdownKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D4ECE120E4FA160030EAB7 /* MarkdownKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdownKit.h; sourceTree = "<group>"; };
+		E1D4ECE220E4FA160030EAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D4ECE720E4FA160030EAB7 /* MarkdownKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D4ECEE20E4FA160030EAB7 /* MarkdownKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownKitTests.swift; sourceTree = "<group>"; };
+		E1D4ECF020E4FA160030EAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4ECF420E4FA160030EAB7 /* MarkdownKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +98,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4ECDB20E4FA150030EAB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4ECE420E4FA160030EAB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4ECE820E4FA160030EAB7 /* MarkdownKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +124,8 @@
 			children = (
 				E1D4ECB820E4F8C00030EAB7 /* MKBuilder */,
 				E1D4ECCE20E4F8C30030EAB7 /* MKBuilderTests */,
+				E1D4ECE020E4FA160030EAB7 /* MarkdownKit */,
+				E1D4ECED20E4FA160030EAB7 /* MarkdownKitTests */,
 				E1D4ECB720E4F8C00030EAB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +135,8 @@
 			children = (
 				E1D4ECB620E4F8C00030EAB7 /* MKBuilder.app */,
 				E1D4ECCB20E4F8C30030EAB7 /* MKBuilderTests.xctest */,
+				E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */,
+				E1D4ECE720E4FA160030EAB7 /* MarkdownKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +164,36 @@
 			path = MKBuilderTests;
 			sourceTree = "<group>";
 		};
+		E1D4ECE020E4FA160030EAB7 /* MarkdownKit */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4ECE120E4FA160030EAB7 /* MarkdownKit.h */,
+				E1D4ECE220E4FA160030EAB7 /* Info.plist */,
+			);
+			path = MarkdownKit;
+			sourceTree = "<group>";
+		};
+		E1D4ECED20E4FA160030EAB7 /* MarkdownKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4ECEE20E4FA160030EAB7 /* MarkdownKitTests.swift */,
+				E1D4ECF020E4FA160030EAB7 /* Info.plist */,
+			);
+			path = MarkdownKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E1D4ECDC20E4FA150030EAB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4ECF120E4FA160030EAB7 /* MarkdownKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E1D4ECB520E4F8C00030EAB7 /* MKBuilder */ = {
@@ -108,10 +203,12 @@
 				E1D4ECB220E4F8C00030EAB7 /* Sources */,
 				E1D4ECB320E4F8C00030EAB7 /* Frameworks */,
 				E1D4ECB420E4F8C00030EAB7 /* Resources */,
+				E1D4ECF920E4FA160030EAB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1D4ECF320E4FA160030EAB7 /* PBXTargetDependency */,
 			);
 			name = MKBuilder;
 			productName = MKBuilder;
@@ -136,6 +233,43 @@
 			productReference = E1D4ECCB20E4F8C30030EAB7 /* MKBuilderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E1D4ECDE20E4FA150030EAB7 /* MarkdownKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D4ECF620E4FA160030EAB7 /* Build configuration list for PBXNativeTarget "MarkdownKit" */;
+			buildPhases = (
+				E1D4ECDA20E4FA150030EAB7 /* Sources */,
+				E1D4ECDB20E4FA150030EAB7 /* Frameworks */,
+				E1D4ECDC20E4FA150030EAB7 /* Headers */,
+				E1D4ECDD20E4FA150030EAB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkdownKit;
+			productName = MarkdownKit;
+			productReference = E1D4ECDF20E4FA150030EAB7 /* MarkdownKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1D4ECE620E4FA160030EAB7 /* MarkdownKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D4ECFA20E4FA160030EAB7 /* Build configuration list for PBXNativeTarget "MarkdownKitTests" */;
+			buildPhases = (
+				E1D4ECE320E4FA160030EAB7 /* Sources */,
+				E1D4ECE420E4FA160030EAB7 /* Frameworks */,
+				E1D4ECE520E4FA160030EAB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D4ECEA20E4FA160030EAB7 /* PBXTargetDependency */,
+				E1D4ECEC20E4FA160030EAB7 /* PBXTargetDependency */,
+			);
+			name = MarkdownKitTests;
+			productName = MarkdownKitTests;
+			productReference = E1D4ECE720E4FA160030EAB7 /* MarkdownKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +284,13 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					E1D4ECCA20E4F8C30030EAB7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E1D4ECB520E4F8C00030EAB7;
+					};
+					E1D4ECDE20E4FA150030EAB7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					E1D4ECE620E4FA160030EAB7 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = E1D4ECB520E4F8C00030EAB7;
 					};
@@ -170,6 +311,8 @@
 			targets = (
 				E1D4ECB520E4F8C00030EAB7 /* MKBuilder */,
 				E1D4ECCA20E4F8C30030EAB7 /* MKBuilderTests */,
+				E1D4ECDE20E4FA150030EAB7 /* MarkdownKit */,
+				E1D4ECE620E4FA160030EAB7 /* MarkdownKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +329,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E1D4ECC920E4F8C30030EAB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4ECDD20E4FA150030EAB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4ECE520E4FA160030EAB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +369,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1D4ECDA20E4FA150030EAB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4ECE320E4FA160030EAB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4ECEF20E4FA160030EAB7 /* MarkdownKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +391,21 @@
 			isa = PBXTargetDependency;
 			target = E1D4ECB520E4F8C00030EAB7 /* MKBuilder */;
 			targetProxy = E1D4ECCC20E4F8C30030EAB7 /* PBXContainerItemProxy */;
+		};
+		E1D4ECEA20E4FA160030EAB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D4ECDE20E4FA150030EAB7 /* MarkdownKit */;
+			targetProxy = E1D4ECE920E4FA160030EAB7 /* PBXContainerItemProxy */;
+		};
+		E1D4ECEC20E4FA160030EAB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D4ECB520E4F8C00030EAB7 /* MKBuilder */;
+			targetProxy = E1D4ECEB20E4FA160030EAB7 /* PBXContainerItemProxy */;
+		};
+		E1D4ECF320E4FA160030EAB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D4ECDE20E4FA150030EAB7 /* MarkdownKit */;
+			targetProxy = E1D4ECF220E4FA160030EAB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,6 +622,104 @@
 			};
 			name = Release;
 		};
+		E1D4ECF720E4FA160030EAB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MarkdownKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.takumi.MarkdownKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1D4ECF820E4FA160030EAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MarkdownKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.takumi.MarkdownKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1D4ECFB20E4FA160030EAB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				INFOPLIST_FILE = MarkdownKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.takumi.MarkdownKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MKBuilder.app/Contents/MacOS/MKBuilder";
+			};
+			name = Debug;
+		};
+		E1D4ECFC20E4FA160030EAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				INFOPLIST_FILE = MarkdownKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.takumi.MarkdownKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MKBuilder.app/Contents/MacOS/MKBuilder";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +746,24 @@
 			buildConfigurations = (
 				E1D4ECD820E4F8C30030EAB7 /* Debug */,
 				E1D4ECD920E4F8C30030EAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D4ECF620E4FA160030EAB7 /* Build configuration list for PBXNativeTarget "MarkdownKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D4ECF720E4FA160030EAB7 /* Debug */,
+				E1D4ECF820E4FA160030EAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D4ECFA20E4FA160030EAB7 /* Build configuration list for PBXNativeTarget "MarkdownKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D4ECFB20E4FA160030EAB7 /* Debug */,
+				E1D4ECFC20E4FA160030EAB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
