@@ -24,14 +24,6 @@ class MarkdownKitTests: XCTestCase {
 
     func testConvert() {
 
-        let path = Bundle(for: MarkdownKitTests.self).path(forResource: "sample", ofType: "md")
-        let string = try! String(contentsOfFile: path!)
-
-        MKOperator.convert(with: string)
-
-        let outputPath = Bundle(for: MarkdownKitTests.self).bundlePath + "/" + "output.html"
-        MKOperator.output(outputPath)
-
     }
     
     func testPerformanceExample() {
