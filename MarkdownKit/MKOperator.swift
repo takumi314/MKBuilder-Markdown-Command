@@ -11,9 +11,9 @@ import MMMarkdown
 
 public class MKOperator : NSObject {
 
-    static var html: String = ""
+    private var html: String = ""
 
-    public static func read() -> String {
+    public func read() -> String {
 
         let current = FileManager.default.currentDirectoryPath
         guard let filePath = Bundle.main.path(forResource: "", ofType: "md", inDirectory: current) else {
@@ -28,7 +28,7 @@ public class MKOperator : NSObject {
 
     }
 
-    public static func convert(with markdonw: String) {
+    public func convert(with markdonw: String) {
 
         if let htmlString = try? MMMarkdown.htmlString(withMarkdown: markdonw) {
 
@@ -43,7 +43,7 @@ public class MKOperator : NSObject {
 
     }
 
-    public static func output(_ path: String?) {
+    public func output(_ path: String?) {
 
         let current = FileManager.default.currentDirectoryPath + "/" + "output.html"
 
@@ -53,7 +53,7 @@ public class MKOperator : NSObject {
 
         print(urlString)
 
-        MKOperator.write(MKOperator.html, to: url)
+        MKOperator.write(html, to: url)
     }
 
 
