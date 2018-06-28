@@ -21,9 +21,17 @@ class MarkdownKitTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testConvert() {
+
+        let path = Bundle(for: MarkdownKitTests.self).path(forResource: "sample", ofType: "md")
+        let string = try! String(contentsOfFile: path!)
+
+        MKOperator.convert(with: string)
+
+        let outputPath = Bundle(for: MarkdownKitTests.self).bundlePath + "/" + "output.html"
+        MKOperator.output(outputPath)
+
     }
     
     func testPerformanceExample() {
