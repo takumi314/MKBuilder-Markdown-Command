@@ -7,3 +7,6 @@
 [submodule "Carthage/Checkouts/MMMarkdown"]
 	path = Carthage/Checkouts/MMMarkdown
 	url = https://github.com/mdiep/MMMarkdown.git
+[submodule "Carthage/Checkouts/LlamaKit"]
+	path = Carthage/Checkouts/LlamaKit
+	url = https://github.com/LlamaKit/LlamaKit.git
